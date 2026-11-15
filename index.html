@@ -4,64 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdul Raheem | Web Developer</title>
+  <meta name="description" content="Abdul Raheem, IT student and web developer. I build clean, mobile-friendly websites for small businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Abdul Raheem</h1>
-    <p class="tagline">IT Student &amp; Web Developer</p>
-    <p>I build clean, mobile-friendly websites for small businesses.</p>
-    <a href="#contact" class="btn">Hire Me</a>
+  <header class="nav">
+    <a href="#top" class="logo">AR<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Hire me</a>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a 2nd year IT student at Sindh University. I work with HTML, CSS,
-      JavaScript and Java, and I am learning to build websites and apps that
-      solve real problems.
-    </p>
-  </section>
+  <main id="top">
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>Responsive Design</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="cards">
-
-      <div class="card">
-        <h3>BiteSafe Pakistan</h3>
-        <p>Team project (4 students), shown at our department exhibition. A web app to find rabies vaccine stock and track dose schedules. Prototype with sample data, English and Urdu.</p>
-        <a href="https://abdulraheem-build.github.io/bitesafe-pakistan/">View Project</a>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Abdul Raheem</h1>
+        <p class="role">IT Student <i>/</i> Web Developer</p>
+        <p class="lead">I build clean, mobile-friendly websites for small businesses: shops, clinics and academies.</p>
+        <div class="actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Practice Project: Java Calculator</h3>
-        <p>Coming soon. A basic calculator in Java to revise my fundamentals.</p>
+      <div class="code-card" aria-hidden="true">
+        <div class="code-top"><i></i><i></i><i></i><span>abdul.js</span></div>
+<pre><code><b class="k">const</b> abdul = {
+  role: <b class="s">"Web Developer"</b>,
+  studying: <b class="s">"IT, Sindh University"</b>,
+  stack: [<b class="s">"HTML"</b>, <b class="s">"CSS"</b>,
+          <b class="s">"JavaScript"</b>, <b class="s">"Java"</b>],
+  freelance: <b class="k">true</b>
+};</code></pre>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="block">
+      <h2><span>01</span> About me</h2>
+      <div class="about-grid">
+        <p>
+          I am a 2nd year IT student at Sindh University. I work with HTML, CSS,
+          JavaScript and Java, and I like turning ideas into websites and apps
+          that solve real problems. I am looking for small freelance projects
+          where I can grow and deliver good work.
+        </p>
+        <ul class="stats">
+          <li><b>2nd</b><span>year IT student</span></li>
+          <li><b>2</b><span>live projects</span></li>
+          <li><b>EN / UR</b><span>bilingual app built</span></li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:abdulraheem.build@gmail.com">abdulraheem.build@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/923124278144">+92 312 4278144</a></p>
-    <p>GitHub: <a href="https://github.com/abdulraheem-build">github.com/abdulraheem-build</a></p>
-  </section>
+    <!-- SKILLS -->
+    <section id="skills" class="block">
+      <h2><span>02</span> Skills</h2>
+      <ul class="chips">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Responsive Design</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="block">
+      <h2><span>03</span> Projects</h2>
+
+      <div class="projects">
+
+        <article class="project">
+          <div class="art art-bite">
+            <span class="art-badge">Team project</span>
+            <strong>BiteSafe<br>Pakistan</strong>
+          </div>
+          <div class="project-body">
+            <h3>BiteSafe Pakistan</h3>
+            <p>
+              A web app that helps dog bite patients find hospitals with rabies
+              vaccine in stock and track their dose schedule. Built with a team of
+              4 students and shown at our department exhibition. Prototype with
+              sample data, in English and Urdu.
+            </p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>English + Urdu</li>
+            </ul>
+            <div class="links">
+              <a class="link primary" href="https://abdulraheem-build.github.io/bitesafe-pakistan/" target="_blank" rel="noopener">Live demo &#8599;</a>
+              <a class="link" href="https://github.com/abdulraheem-build/bitesafe-pakistan" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="art art-calc">
+            <span class="art-badge">Web app</span>
+            <strong>Neon<br>Calculator</strong>
+          </div>
+          <div class="project-body">
+            <h3>Neon Calculator</h3>
+            <p>
+              A web calculator with a glass-style neon design, an animated
+              background and a history panel that keeps your past calculations.
+            </p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="links">
+              <a class="link primary" href="https://abdulraheem-build.github.io/neon-calculator/" target="_blank" rel="noopener">Live demo &#8599;</a>
+              <a class="link" href="https://github.com/abdulraheem-build/neon-calculator" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="block">
+      <div class="contact">
+        <h2><span>04</span> Let's work together</h2>
+        <p>Need a simple website for your shop, clinic or academy? Send me a message.</p>
+        <div class="contact-links">
+          <a href="mailto:abdulraheem.build@gmail.com"><small>Email</small>abdulraheem.build@gmail.com</a>
+          <a href="https://wa.me/923124278144" target="_blank" rel="noopener"><small>WhatsApp</small>+92 312 4278144</a>
+          <a href="https://github.com/abdulraheem-build" target="_blank" rel="noopener"><small>GitHub</small>github.com/abdulraheem-build</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>&copy; 2026 Abdul Raheem</p>
+    <p>&copy; 2026 Abdul Raheem. Built by hand with HTML and CSS.</p>
   </footer>
 
 </body>
