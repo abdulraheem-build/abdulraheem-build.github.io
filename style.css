@@ -371,6 +371,16 @@ main {
   color: #00ffcc;
 }
 
+.art-exp {
+  background:
+    radial-gradient(circle at 80% 25%, rgba(46, 213, 115, 0.5), transparent 45%),
+    linear-gradient(135deg, #134e5e, #0b2a33);
+}
+
+.art-exp strong {
+  color: #9af5b5;
+}
+
 .project-body {
   padding: 22px;
   display: flex;
@@ -512,6 +522,12 @@ footer {
   }
 
   .contact-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }
